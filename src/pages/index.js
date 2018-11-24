@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import Header from '../styles/blocks/Banner'
 import HeaderButton from '../styles/elements/Button'
 import Layout from '../components/layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 const IndexPage = props => {
@@ -16,6 +18,8 @@ const IndexPage = props => {
         <HeaderButton  color="secondary">
           Sprawdź
         </HeaderButton>
+        <FontAwesomeIcon icon="stroopwafel" />
+
       </Header>
     </Layout>
   )

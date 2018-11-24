@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import Title from './Title'
 import SubTitle from './SubTitle'
-import bg from '../../../images/apple-blank-business-442574.jpg'
+import bg from '../../../images/architecture-building-center-27406.jpg'
 
 
 
 const Header = styled.div`
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background-image: url(${bg});
   background-size: cover;
   position: relative;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/extra-bg.png'
+import logo from '../images/architecture-building-center-27406.jpg'
 import Menu from '../components/menu'
 
 class Header extends Component{
