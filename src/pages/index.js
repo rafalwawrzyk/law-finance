@@ -18,7 +18,7 @@ const IndexPage = props => {
         <HeaderButton  color="secondary">
           Sprawdź
         </HeaderButton>
-        <FontAwesomeIcon icon="stroopwafel" />
+        <FontAwesomeIcon icon="angle-double-down" />
 
       </Header>
     </Layout>
