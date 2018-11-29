@@ -8,9 +8,9 @@ import './layout.css'
 import Menu from '../components/menu'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faStroopwafel)
+library.add(faAngleDoubleDown)
 
 const Layout = ({ children }) => (
   <StaticQuery
