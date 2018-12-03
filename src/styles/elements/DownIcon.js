@@ -8,3 +8,12 @@
 // )
 
 
+import styled from 'styled-components';
+
+
+
+const ArrowIcon = styled.div`
+    padding-left:70px
+`
+
+export default ArrowIcon;
