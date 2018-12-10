@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createGlobalStyle } from 'styled-components';
 import ArrowIcon from '../styles/elements/DownIcon'
+import Main from '../components/main';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -28,6 +29,8 @@ const IndexPage = (props) => {
           <FontAwesomeIcon icon="angle-double-down" />
         </ArrowIcon>
 			</Header>
+			<Main/>
+
 			
 		</Layout>
 	);
