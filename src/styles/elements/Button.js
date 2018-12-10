@@ -7,7 +7,7 @@ const StyledButton = styled(Button)`
     background: #ff6734;
     color: #fff;
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size:1rem;

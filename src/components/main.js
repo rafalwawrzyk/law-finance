@@ -1,28 +1,26 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import SquaredBg from '../styles/blocks/SquareBlockBg';
-import SquaredText from '../styles/blocks/SquaredText';
 import GridBackground from '../components/gridBackground'
 import GridText from '../components/gridText';
+import pageInfo from '../pageInfo';
 
 const arraySample = [1,2,3,4]
 
 const Layout = arraySample.map((elem,i) => {
-  if(i % 2 === 0){
+  if(i % 2 != 0){
     return (
       <>
-        <GridText/>
-        <GridBackground/>
-      </>
-    )
-  }else{
-    return (
-      <>
-        <GridBackground/>
-        <GridText/>
+        <GridText />
+        <GridBackground background ={pageInfo.backgrounds[i]}/>
       </>
     )
   }
+    return (
+      <>
+        <GridBackground background ={pageInfo.backgrounds[i]}/>
+        <GridText/>
+      </>
+    )
 })
 
 const Main = () => {
