@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createGlobalStyle } from 'styled-components';
 import ArrowIcon from '../styles/elements/DownIcon';
 import Main from '../components/main';
+import Footer from '../components/footer'
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -26,6 +27,7 @@ const IndexPage = (props) => {
 				</ArrowIcon>
 			</Header>
 			<Main />
+      <Footer/>
 		</Layout>
 	);
 };

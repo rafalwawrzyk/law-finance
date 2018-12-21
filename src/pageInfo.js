@@ -7,14 +7,20 @@ import bg4 from './images/black-and-white-blur-desk-910332.jpg';
 const pageInfo = {
     aboutSection:{
         title: 'O nas',
+        background:bg1
     },
     offerSection:{
         title: 'Oferta',
+        background:bg2
+    },
+    experience:{
+        title:'Doświadczenie',
+        background:bg3
     },
     contactSection:{
-        title:'kontakt'
-    },
-    backgrounds:[bg1,bg2,bg3,bg4]
+        title:'Kontakt',
+        background:bg4
+    }
 }
 
 

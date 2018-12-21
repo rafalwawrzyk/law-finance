@@ -7,7 +7,7 @@ const GridBackground = (props) => {
 	return (
 		<Grid item xs={12} sm={6} style={{ height: '400px', padding: 0 }}>
 			<SquaredBg background={props.background}>
-				<SquaredBg.Title>Title</SquaredBg.Title>
+				<SquaredBg.Title>{props.title}</SquaredBg.Title>
 			</SquaredBg>
 		</Grid>
 	);
