@@ -2,10 +2,13 @@ import styled from 'styled-components';
 
 
 const TitleBg = styled.h2`
-    position:relative;
     top:50%;
-    transform:translateY(-50%);
-    text-align:center;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1.2rem;
 `
 
 

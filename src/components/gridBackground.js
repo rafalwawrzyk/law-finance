@@ -5,10 +5,10 @@ import img from '../images/art-black-and-white-blank-256433.jpg';
 
 const GridBackground = (props) => {
 	return (
-		<Grid item xs={12} sm={6} style={{ height: '400px', padding: 0 }}>
+		<Grid item xs={12} sm={6} style={{ height: '400px', padding: 0,position:'relative' }}>
 			<SquaredBg background={props.background}>
-				<SquaredBg.Title>{props.title}</SquaredBg.Title>
 			</SquaredBg>
+			<SquaredBg.Title>{props.title}</SquaredBg.Title>
 		</Grid>
 	);
 };

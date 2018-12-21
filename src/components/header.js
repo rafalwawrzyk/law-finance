@@ -34,7 +34,7 @@ class Header extends Component{
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 960
       }}
     >
     {/* <img src={logo} alt="someimg"/>  */}

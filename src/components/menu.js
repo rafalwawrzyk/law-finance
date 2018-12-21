@@ -109,6 +109,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const styles = {
   list: {
     width: 250,
+    paddingTop:100
   },
   fullList: {
     width: 'auto',
@@ -150,7 +151,11 @@ class TemporaryDrawer extends React.Component {
 
 
     return (
-      <div>
+      <div style={{
+        position: 'fixed',
+        zIndex: 3000,
+        background:'#fff',
+        width:'69px'}}>
         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
             <MenuIcon />
         </IconButton>

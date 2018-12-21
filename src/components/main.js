@@ -9,10 +9,11 @@ const Layout = Object.keys(pageInfo).map((elem, i) => {
   if (i % 2 != 0) {
     return (
       <>
-        <GridText />
+        <GridText key={pageInfo[elem]} />
         <GridBackground
           background={pageInfo[elem]['background']}
           title={pageInfo[elem]['title']}
+          key={pageInfo[elem]}
         />
       </>
     )
@@ -22,8 +23,9 @@ const Layout = Object.keys(pageInfo).map((elem, i) => {
       <GridBackground
         background={pageInfo[elem]['background']}
         title={pageInfo[elem]['title']}
+        key={pageInfo[elem]}
       />
-      <GridText />
+      <GridText key={pageInfo[elem]} />
     </>
   )
 })
@@ -31,7 +33,7 @@ const Layout = Object.keys(pageInfo).map((elem, i) => {
 const Main = () => {
   return (
     <div>
-      <Grid container spacing={8}>
+      <Grid container spacing={0}>
         {Layout}
       </Grid>
     </div>

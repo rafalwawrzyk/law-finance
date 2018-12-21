@@ -8,6 +8,7 @@ const SquaredBg = styled.div`
     background-image:url(${props => props.background});
     background-position:center;
     background-size:cover;
+    filter: brightness(15%)
 `
 
 SquaredBg.Title = Title;
