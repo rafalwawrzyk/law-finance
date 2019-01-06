@@ -28,7 +28,7 @@ const IndexPage = (props) => {
 				</ArrowIcon>
 			</Header>
 			<Main />
-      <Footer/>
+      {/* <Footer/> */}
 		</Layout>
 	);
 };
