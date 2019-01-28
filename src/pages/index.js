@@ -5,8 +5,8 @@ import Layout from '../components/layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createGlobalStyle } from 'styled-components';
 import ArrowIcon from '../styles/elements/DownIcon';
-import Main from '../components/Main';
-import Footer from '../components/Footer'
+import Main from '../components/main';
+// import Footer from '../components/Footer'
 
 const GlobalStyle = createGlobalStyle`
   body{
