@@ -7,8 +7,11 @@ const SquaredBg = styled.div`
     background-image:url(${props => props.background});
     background-position:center;
     background-size:cover;
-    filter: brightness(15%);
-    background-color:red
+    filter: brightness(40%);
+    width:100%;
+    flex-basis: 100%;
+    background-color:red;
+
 `
 
 SquaredBg.Title = Title;

@@ -9,6 +9,19 @@ const TitleBg = styled.h2`
     color:#fff;
     text-transform:uppercase;
     font-size:1.2rem;
+    display:block;
+    z-index:200;
+
+    &:after{
+        content:'';
+        display:block;
+        background-color:#ff9e36;
+        width:100%;
+        height:1px;
+        position:absolute;
+        bottom:-5px;
+        
+    }
 `
 
 

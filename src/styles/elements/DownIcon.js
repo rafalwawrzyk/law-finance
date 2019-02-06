@@ -14,7 +14,7 @@ import styled from 'styled-components';
 
 const ArrowIcon = styled.div`
     position:relative;
-    top:80%;
+    top:-10%;
     left:50%;
     transform:translateX(-50%);
     background-color:#FFFFF7;
