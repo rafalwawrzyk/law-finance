@@ -30,6 +30,8 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"/>
+
         </Helmet>
 
         <div

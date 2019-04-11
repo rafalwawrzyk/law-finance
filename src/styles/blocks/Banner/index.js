@@ -7,7 +7,7 @@ import Background from './Background'
 
 const Header = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 300px;
   position: relative;
 `
 

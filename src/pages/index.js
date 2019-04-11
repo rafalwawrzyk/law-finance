@@ -19,14 +19,6 @@ const IndexPage = (props) => {
 	return (
 		<Layout>
 			<GlobalStyle />
-			<Header>
-        <Header.Background/>
-				<Header.Title>Kancelaria Prawno-Finansowa</Header.Title>
-				<Header.SubTitle>Beata Wierczewska</Header.SubTitle>
-				<ArrowIcon>
-					<FontAwesomeIcon icon="angle-double-down" />
-				</ArrowIcon>
-			</Header>
 			<Main />
       {/* <Footer/> */}
 		</Layout>
