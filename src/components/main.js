@@ -1,18 +1,14 @@
 import React from 'react';
-import SquaredBg from '../styles/blocks/SquareBlockBg';
-import bg1 from '../images/architecture-building-center-27406.jpg';
-import SquaredText from '../styles/blocks/SquaredText';
 import styled from 'styled-components';
-import Header from "./header"
-
-import Content from './content.js'
+import Content from './content.js';
 import Footer from './footer';
+import Layout from './layout';
 
 export const ContentContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	width:100%;
+	width: 100%;
 `;
 
 const Section = styled.div`
@@ -57,27 +53,24 @@ const List = styled.ul`
 `;
 
 const Container = styled.div`
-	max-width:1380px;
-	display:flex;
-	justify-content:center;
-	margin-left:auto;
-	margin-right:auto;
-	width:100%;
-`
-
-
-
+	max-width: 1380px;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+`;
 
 const Main = () => {
 	return (
-		<Container>
-			<ContentContainer>
-			<Header/>
-			<Content/>
-			<Footer/>
-		</ContentContainer>
-		</Container>
-		
+		<Layout>
+			<Container>
+				<ContentContainer>
+					<Content />
+					<Footer />
+				</ContentContainer>
+			</Container>
+		</Layout>
 	);
 };
 

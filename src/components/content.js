@@ -4,7 +4,7 @@ import bg from '../images/apple-blank-business-442574.jpg';
 import bg2 from '../images/art-black-and-white-blank-256433.jpg';
 import bg3 from '../images/carpet-contemporary-daylight-1098982.jpg';
 import bg4 from '../images/black-and-white-blur-desk-910332.jpg';
-
+import { Link } from 'gatsby';
 
 const Container = styled.div`
 	width: 100%;
@@ -16,13 +16,14 @@ const Container = styled.div`
 
 const CiteContainer = styled.div`
 	max-width: 400px;
-	padding-top: 100px;
+	padding-top: 200px;
 
 	p {
 		font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 1.5rem;
 		letter-spacing: 0.1rem;
 		line-height: 2rem;
+        color:#484747;
 	}
 `;
 
@@ -38,7 +39,8 @@ const SectionElem = styled.div`
 	background-color: ${(props) => props.backgroundColor};
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
+    position: relative;
+    z-index:-1;
 	&::after {
 		content: "";
 		display: block;
@@ -77,37 +79,45 @@ const Content = () => {
 	return (
 		<Container>
 			<CiteContainer>
-				<p>Did you hear that? They've shut down. </p>
+				<p>Najlepsza obsługa Prawno-Finansowa.</p>
 			</CiteContainer>
 			<SectionContainer>
-				<SectionElem backgroundColor="red">
-					<SectionElemTitle>
-						<p>Oferta</p>
-						<p>Outsourcing usług księgowych</p>
-					</SectionElemTitle>
-					<SectionElemBg backgroundImage={bg} />
-				</SectionElem>
-				<SectionElem backgroundColor="green">
-					<SectionElemBg backgroundImage={bg2} />
-					<SectionElemTitle>
-						<p>Oferta</p>
-						<p>Outsourcing kadrowo-płacowy</p>
-					</SectionElemTitle>
-				</SectionElem>
-                <SectionElem backgroundColor="green">
-					<SectionElemBg backgroundImage={bg3} />
-					<SectionElemTitle>
-						<p>Oferta</p>
-						<p>Doradztwo prawno-podatkowe</p>
-					</SectionElemTitle>
-				</SectionElem>
-                <SectionElem backgroundColor="green">
-					<SectionElemBg backgroundImage={bg4} />
-					<SectionElemTitle>
-						<p>Oferta</p>
-						<p>Pozostałe usługi</p>
-					</SectionElemTitle>
-				</SectionElem>
+				<Link to="/outsourcing-ksiegowy">
+					<SectionElem>
+						<SectionElemTitle>
+							<p>Oferta</p>
+							<p>Outsourcing usług księgowych</p>
+						</SectionElemTitle>
+						<SectionElemBg backgroundImage={bg} />
+					</SectionElem>
+				</Link>
+				<Link to="/outsorcing-kadrowo-placowy">
+					<SectionElem>
+						<SectionElemBg backgroundImage={bg2} />
+						<SectionElemTitle>
+							<p>Oferta</p>
+							<p>Outsourcing kadrowo-płacowy</p>
+						</SectionElemTitle>
+					</SectionElem>
+				</Link>
+				<Link to="/doradztwo-prawne-podatkowe">
+					<SectionElem>
+						<SectionElemBg backgroundImage={bg3} />
+						<SectionElemTitle>
+							<p>Oferta</p>
+							<p>Doradztwo prawno-podatkowe</p>
+						</SectionElemTitle>
+					</SectionElem>
+				</Link>
+				<Link to="/pozostale-uslugi">
+					<SectionElem>
+						<SectionElemBg backgroundImage={bg4} />
+						<SectionElemTitle>
+							<p>Oferta</p>
+							<p>Pozostałe usługi</p>
+						</SectionElemTitle>
+					</SectionElem>
+				</Link>
 			</SectionContainer>
 		</Container>
 	);

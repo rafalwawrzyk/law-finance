@@ -20,7 +20,6 @@ const IndexPage = (props) => {
 		<Layout>
 			<GlobalStyle />
 			<Main />
-      {/* <Footer/> */}
 		</Layout>
 	);
 };
