@@ -3,10 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
+import Footer from './footer'
+
 
 import './layout.css'
 
-const Layout = ({ children }) => (
+
+const Layout = (props) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,15 +33,12 @@ const Layout = ({ children }) => (
           <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"/>
 
         </Helmet>
-
-        <div
-          style={{
-            margin: '0 auto',
-            paddingTop: 0,
-          }}
-        >
-          {children}
+        <Header />
+        <div>
+          {props.children}
         </div>
+        <Footer />
+
       </>
     )}
   />

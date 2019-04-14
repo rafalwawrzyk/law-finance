@@ -15,36 +15,21 @@ const ImageBox = styled.div`
 const OfferList = styled.div`
 	padding-top: 50px;
 	ul {
-		li{
+		li {
 			font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size:1.5rem;
+			font-size: 1.5rem;
 		}
 	}
 `;
 
-const AccountingOutsourcing = () => {
+const Contact = () => {
 	return (
 		<Layout>
 			<Container>
-				<CiteContainer>
-					<p>Pomagamy naszym klientom w sprawach księgowych</p>
-				</CiteContainer>
-				<ImageBox />
-				<OfferList>
-					<ul>
-						<li>usługi księgowe zgodnie z Ustawą o rachunkowości</li>
-						<hr/>
-						<li>deklaracje podatkowe, GUS</li>
-						<hr/>
-						<li>sprawozdania finansowe</li>
-						<hr/>
-						<li>reprezentowanie Klienta przed organami podatkowymi</li>
-						<hr/>
-					</ul>
-				</OfferList>
+				<CiteContainer />
 			</Container>
 		</Layout>
 	);
 };
 
-export default AccountingOutsourcing;
+export default Contact;

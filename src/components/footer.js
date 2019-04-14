@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import FooterContact from './footerContact'
 
 const FooterContainer = styled.footer`
 	width: 100%;
-	height: 200px;
   margin-top: 10px;
   padding-left: 7%;
   padding-right: 7%;
@@ -27,16 +27,6 @@ const FooterContactContainer = styled.div`
   align-items:center;
 `
 
-const FooterContactInfo = styled.ul`
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-  list-style-type:none;
-  margin-bottom:20px;
-  li{
-    text-align:center;
-  }
-`
 
 const DesignedBy = styled.div`
   width:100%;
@@ -51,17 +41,9 @@ const Footer = () => {
 				<FooterTitle>Skontatuj się z nami</FooterTitle>
 			</FooterTitleCotainer>
       <FooterContactContainer>
-      <FooterContactInfo>
-					<li>
-						<p>Leśna 1</p>
-						<p>87-640 Czernikowo</p>
-            <p>54 288 92 22</p>
-            <p>kancelaria@kpfczernikowo.eu</p>
-            <p>czynne: poniedziałek-piątek 8:00 - 17:00</p>
-					</li>
-				</FooterContactInfo>
+      <FooterContact/>
       </FooterContactContainer>
-      <DesignedBy>Raał</DesignedBy>
+      {/* <DesignedBy>Raał</DesignedBy> */}
 		</FooterContainer>
 	);
 };

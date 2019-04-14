@@ -25,13 +25,17 @@ const Menu = styled.div`
     padding-top:150px;
     font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     a{
-      text-decoration:none;
+	  text-decoration:none;
+	  display:block;
+	  width:100%;
+	  height:100%;
     }
     li{
       color:#fff;
     font-size: 2rem;
     line-height: 35px;
-    padding: 5px;
+	padding: 5px;
+	display:block;
     }
   }
 `;
@@ -61,6 +65,9 @@ const Logo = styled.div`
 	img {
 		height: 100%;
 		width: auto;
+	}
+	a {
+		text-decoration: none;
 	}
 `;
 
@@ -103,19 +110,25 @@ class Header extends Component {
 				{open ? (
 					<Menu>
 						<ul>
-							<Link to="/outsourcing-ksiegowy">
-								<li>Outsourcing usług księgowych</li>
-							</Link>
-							<Link to="/outsorcing-kadrowo-placowy">
-								<li>Outsourcing kadrowo-płacowy</li>
-							</Link>
-							<Link to="/doradztwo-prawne-podatkowe">
-								<li>Doradztwo prawno-podatkowe</li>
-							</Link>
-							<Link to="/pozostale-uslugi">
-								<li>Pozostałe usługi</li>
-							</Link>
-							<li>Kontakt</li>
+							<li>
+								<Link to="/outsourcing-ksiegowy">Outsourcing usług księgowych</Link>
+							</li>
+
+							<li>
+								<Link to="/outsorcing-kadrowo-placowy">Outsourcing kadrowo-płacowy </Link>
+							</li>
+
+							<li>
+								<Link to="/doradztwo-prawne-podatkowe">Doradztwo prawno-podatkowe</Link>
+							</li>
+
+							<li>
+								<Link to="/pozostale-uslugi">Pozostałe usługi</Link>
+							</li>
+
+							<li>
+								<Link to="/kontakt">Kontakt</Link>
+							</li>
 						</ul>
 					</Menu>
 				) : null}
@@ -130,11 +143,11 @@ class Header extends Component {
 					>
 						{open ? <FaTimes /> : <FaBars />}
 					</Hamburger>
-					<Link to="/">
-						<Logo view={scrolled}>
+					<Logo view={scrolled}>
+						<Link to="/">
 							<img src={logoImg} />
-						</Logo>
-					</Link>
+						</Link>
+					</Logo>
 				</HeaderMenuContent>
 			</HeaderContainer>
 		);

@@ -6,7 +6,7 @@ import bg3 from '../images/carpet-contemporary-daylight-1098982.jpg';
 import bg4 from '../images/black-and-white-blur-desk-910332.jpg';
 import { Link } from 'gatsby';
 
-const Container = styled.div`
+export const Container = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -14,7 +14,7 @@ const Container = styled.div`
 	padding-right: 7%;
 `;
 
-const CiteContainer = styled.div`
+export const CiteContainer = styled.div`
 	max-width: 400px;
 	padding-top: 200px;
 
@@ -40,7 +40,8 @@ const SectionElem = styled.div`
 	margin-left: auto;
 	margin-right: auto;
     position: relative;
-    z-index:-1;
+	z-index:-1;
+	margin-bottom:5px;
 	&::after {
 		content: "";
 		display: block;
@@ -54,7 +55,7 @@ const SectionElemBg = styled.div`
 	height: 100%;
 	background-image: url(${(props) => props.backgroundImage});
 	background-size: cover;
-	filter: brightness(60%);
+	filter: brightness(40%);
 	z-index: 1;
 `;
 
@@ -67,6 +68,8 @@ const SectionElemTitle = styled.div`
 	p {
 		margin: 0;
 		padding: 0;
+		font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 	}
 	p:nth-child(even) {
 		font-size: 1.3rem;
