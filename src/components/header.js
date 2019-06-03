@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import logoImg from '../images/extra-bg.png';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import assets from '../assets/variables';
+
+
+const {orange,main} = assets.colors;
+
 
 const HeaderContainer = styled.div`
 	width: 100%;
@@ -20,22 +25,25 @@ const Menu = styled.div`
   background-color:black;
   ul{
     list-style-type:none;
-    padding-top:
-    color:#fff;
+    color:${main};
     padding-top:150px;
     font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     a{
 	  text-decoration:none;
 	  display:block;
 	  width:100%;
-	  height:100%;
+		height:100%;
+		color:${main};
+		&:hover{
+			color:${orange};
+		}
     }
     li{
-      color:#fff;
+      color:${main};
     font-size: 2rem;
     line-height: 35px;
-	padding: 5px;
-	display:block;
+		padding: 5px;
+		display:block;
     }
   }
 `;
@@ -57,11 +65,16 @@ const Hamburger = styled.div`
 	align-items: center;
 	z-index: 1;
 	color: ${(props) => (props.hamburgerColor ? 'white' : 'black')};
+	&:hover{
+		cursor:pointer;
+	}
+
 `;
 
 const Logo = styled.div`
 	height: 100%;
 	display: ${(props) => (props.view ? 'none' : 'block')};
+	user-select: none;
 	img {
 		height: 100%;
 		width: auto;
