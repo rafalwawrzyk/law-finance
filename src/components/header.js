@@ -22,12 +22,19 @@ const Menu = styled.div`
   height:100%;
   top:0;
   left:0;
-  background-color:black;
+	background-color:black;
+	@media (min-width:320px){
+		width:35%;
+		li{
+			font-size:1rem !important;
+			line-height:30px !important;
+		}
+	}
   ul{
     list-style-type:none;
     color:${main};
     padding-top:150px;
-    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     a{
 	  text-decoration:none;
 	  display:block;
